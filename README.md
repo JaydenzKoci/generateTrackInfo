@@ -16,10 +16,10 @@ It will ask for you to click another site and you need to type the values on the
 
 That's basically the gist. This is to make my life easier most likely not someone else lol.
 ## Dependencies
-os
-requests
-spotipy
-spotipy.oauth2
-dotenv
-json
-re
+- os
+- requests
+- spotipy
+- spotipy.oauth2
+- dotenv
+- json
+- re
