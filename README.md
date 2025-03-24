@@ -15,3 +15,11 @@ It will ask you to go to a link and copy the video address of the video on the w
 It will ask for you to click another site and you need to type the values on the page. Specfically the BPM, Release Year, and Duration of the song.
 
 That's basically the gist. This is to make my life easier most likely not someone else lol.
+## Dependencies
+os
+requests
+spotipy
+spotipy.oauth2
+dotenv
+json
+re
