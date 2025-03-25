@@ -6,7 +6,7 @@ Go to data/jam_tracks.json and use My Oh My by Ava Max as an example.
 ## Every track needs
 - Title
 - Artist
-- Simplifed Spotify Link - Example for https://open.spotify.com/track/377uEWjxVKksQDlwDqaIfx?si=49c2712047ef45a8. It would be 377uEWjxVKksQDlwDqaIfx.
+- Spotify ID - Example for https://open.spotify.com/track/377uEWjxVKksQDlwDqaIfx. It would be 377uEWjxVKksQDlwDqaIfx.
 ## After you get those things down. Run run.bat.
 It will grab the info from the jam_tracks.json file and it will detect if they need updating
 ## The Canvas Download.
