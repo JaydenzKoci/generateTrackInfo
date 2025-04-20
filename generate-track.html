@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Track</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Generate Track</h1>
+      <p><a href="index.html">Back to Home</a></p>
+    </header>
+    <main>
+      <form id="trackForm">
+        <div class="form-group">
+          <label for="trackTitle">Title</label>
+          <input type="text" id="trackTitle">
+        </div>
+        <div class="form-group">
+          <label for="trackArtist">Artist</label>
+          <input type="text" id="trackArtist">
+        </div>
+        <div class="form-group">
+          <label for="trackReleaseYear">Release Year</label>
+          <input type="number" id="trackReleaseYear" min="1900" max="2100">
+        </div>
+        <div class="form-group">
+          <label for="trackAlbum">Album</label>
+          <input type="text" id="trackAlbum">
+        </div>
+        <div class="form-group">
+          <label for="trackLoadingPhrase">Loading Phrase</label>
+          <input type="text" id="trackLoadingPhrase">
+        </div>
+        <div class="form-group">
+          <label for="trackGenres">Genres</label>
+          <input type="text" id="trackGenres">
+        </div>
+        <div class="form-group">
+          <label for="trackCharters">Charters</label>
+          <input type="text" id="trackCharters">
+        </div>
+        <div class="form-group">
+          <label for="trackLength">Length (seconds)</label>
+          <input type="number" id="trackLength" min="0" step="1">
+        </div>
+        <div class="form-group">
+          <label for="diffGuitar">Guitar Difficulty (0-6)</label>
+          <input type="number" id="diffGuitar" min="0" max="6">
+        </div>
+        <div class="form-group">
+          <label for="trackMidi">MIDI File Name</label>
+          <input type="text" id="trackMidi">
+        </div>
+      </form>
+      <div class="download-section">
+        <button id="downloadJson" class="link-button">Download JSON and Return to Home</button>
+      </div>
+    </main>
+  </div>
+  <script src="scripts/generate-track.js"></script>
+</body>
+</html>

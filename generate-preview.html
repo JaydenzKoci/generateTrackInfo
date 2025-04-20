@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Track for Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Generate Track for Website</h1>
+      <p><a href="index.html">Back to Home</a></p>
+    </header>
+    <main>
+      <form id="trackForm">
+        <div class="form-group">
+          <label for="trackTitle">Title</label>
+          <input type="text" id="trackTitle">
+        </div>
+        <div class="form-group">
+          <label for="trackArtist">Artist</label>
+          <input type="text" id="trackArtist">
+        </div>
+        <div class="form-group">
+          <label for="trackReleaseYear">Release Year</label>
+          <input type="number" id="trackReleaseYear" min="1900" max="2100">
+        </div>
+        <div class="form-group">
+          <label for="trackBpm">BPM</label>
+          <input type="number" id="trackBpm" min="0" step="1">
+        </div>
+        <div class="form-group">
+          <label for="trackDuration">Duration (e.g., 2m 21s)</label>
+          <input type="text" id="trackDuration" pattern="\d+m \d+s">
+        </div>
+        <div class="form-group">
+          <label for="trackCover">Cover Image URL</label>
+          <input type="url" id="trackCover">
+        </div>
+        <div class="form-group">
+          <label for="trackPreviewUrl">Preview Audio URL</label>
+          <input type="url" id="trackPreviewUrl">
+        </div>
+        <div class="form-group">
+          <label for="trackVideoUrl">Video URL (relative path, e.g., video.mp4)</label>
+          <input type="text" id="trackVideoUrl">
+        </div>
+        <div class="form-group">
+          <label for="trackDownload">Download URL</label>
+          <input type="url" id="trackDownload">
+        </div>
+        <div class="form-group">
+          <label for="trackSpotify">Spotify ID</label>
+          <input type="text" id="trackSpotify">
+        </div>
+        <div class="form-group">
+          <label for="trackComplete">Completion (%)</label>
+          <input type="number" id="trackComplete" min="0" max="100" value="0">
+        </div>
+        <div class="form-group">
+          <label>Difficulty Levels (-1 to 6, -1 for unavailable)</label>
+          <div class="difficulty-inputs">
+            <label for="diffVocals">Vocals</label>
+            <input type="number" id="diffVocals" min="-1" max="6" value="-1">
+            <label for="diffGuitar">Guitar</label>
+            <input type="number" id="diffGuitar" min="-1" max="6" value="-1">
+            <label for="diffBass">Bass</label>
+            <input type="number" id="diffBass" min="-1" max="6" value="-1">
+            <label for="diffDrums">Drums</label>
+            <input type="number" id="diffDrums" min="-1" max="6" value="-1">
+            <label for="diffPlasticBass">Plastic Bass</label>
+            <input type="number" id="diffPlasticBass" min="-1" max="6" value="-1">
+            <label for="diffPlasticDrums">Plastic Drums</label>
+            <input type="number" id="diffPlasticDrums" min="-1" max="6" value="-1">
+            <label for="diffPlasticGuitar">Plastic Guitar</label>
+            <input type="number" id="diffPlasticGuitar" min="-1" max="6" value="-1">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>YouTube Links</label>
+          <div class="youtube-links">
+            <label for="youtubeVocals">Vocals</label>
+            <input type="url" id="youtubeVocals">
+            <label for="youtubeLead">Lead</label>
+            <input type="url" id="youtubeLead">
+            <label for="youtubeBass">Bass</label>
+            <input type="url" id="youtubeBass">
+            <label for="youtubeDrums">Drums</label>
+            <input type="url" id="youtubeDrums">
+          </div>
+        </div>
+      </form>
+      <div class="download-section">
+        <button id="downloadJson" class="link-button">Download JSON and Return to Home</button>
+      </div>
+    </main>
+  </div>
+  <script src="scripts/generate-preview.js"></script>
+</body>
+</html>

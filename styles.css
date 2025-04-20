@@ -1,0 +1,230 @@
+/* Import Roboto from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@font-face {
+  font-family: 'HeadingNowVariable';
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('fonts/HeadingNowVariable.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'HeadingNowVariable', Arial, sans-serif;
+  font-variation-settings: "wdth" 668, "wght" 500;
+  background-color: #121212;
+  color: #dfdddd;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  font-variation-settings: "wdth" 668, "wght" 700;
+}
+
+header p {
+  margin-top: 10px;
+}
+
+main p {
+  margin: 15px 0;
+  text-align: center;
+}
+
+form {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #dfdddd;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="url"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  font: inherit;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.3);
+}
+
+.form-group input:invalid:not(:focus) {
+  border-color: #ff4444;
+}
+
+.difficulty-inputs,
+.youtube-links,
+.stems-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.download-section {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.main-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  font-variation-settings: "wdth" 668, "wght" 600;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.main-button:hover {
+  background-color: #0056b3;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 15px 35px;
+  line-height: 2.2;
+  display: inline-block;
+  min-width: 320px;
+  text-align: center;
+  white-space: nowrap;
+  transition: color 0.3s, text-decoration 0.3s;
+  border-radius: 5px;
+  overflow: visible;
+  letter-spacing: 0.5px;
+}
+
+.link-button:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.link-button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .difficulty-inputs,
+  .youtube-links,
+  .stems-inputs {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .main-button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .link-button {
+    font-size: 13px;
+    padding: 12px 30px;
+    min-width: 280px;
+  }
+  .corner-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    text-decoration: none;
+    background-color: #007bff; /* Adjust color to match your design */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .corner-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  /* Ensure the container doesn't overlap the button */
+  .container {
+    position: relative;
+    padding-top: 40px; /* Add padding to avoid overlap with the button */
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
