@@ -1,6 +1,9 @@
 # generateTrackInfo
 This is a tool used for https://jaydenzkoci.github.io/ to generate track info easier.
 
+# Website
+You can load a website off of this repository for easier setup
+
 # How it works
 Go to data/jam_tracks.json and use My Oh My by Ava Max as an example.
 ## Every track needs
